@@ -315,6 +315,7 @@ class API:
 
         if not self.get_config()['subdomain']:
             print(f'Please enter a subdomain in the config at {config_file_path.absolute()}')
+            exit()
 
         try:
             self.get_req('users?records_per_page=1&pagination=cursor')
