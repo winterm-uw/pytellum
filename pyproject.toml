@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pytellum_winterfollowsspring"
+version = "1.0.0"
+authors = [
+    { name="Winter Miller", email="winterm@uw.edu" }
+]
+description = "A manager for interacting with Intellum's REST API"
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/winterm-uw/pytellum"
+Issues = "https://github.com/winterm-uw/pytellum/issues"

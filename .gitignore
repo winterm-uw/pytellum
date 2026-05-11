@@ -1,0 +1,6 @@
+tests/*
+tests
+dist/*
+dist
+.venv/*
+.venv
