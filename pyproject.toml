@@ -5,6 +5,10 @@ build-backend = "hatchling.build"
 [project]
 name = "pytellum_winterm_uw"
 version = "1.0.0"
+dependencies = [
+    "PyJWT >= 2.12.1",
+    "cryptography >= 47.0.0"
+]
 authors = [
     { name="Winter Miller", email="winterm@uw.edu" }
 ]
