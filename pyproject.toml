@@ -3,7 +3,7 @@ requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pytellum_winterfollowsspring"
+name = "pytellum_winterm-uw"
 version = "1.0.0"
 authors = [
     { name="Winter Miller", email="winterm@uw.edu" }
