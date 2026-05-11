@@ -313,6 +313,9 @@ class API:
             'prod_tok_exp': 0
         }
 
+        if not self.get_config()['subdomain']:
+            print(f'Please enter a subdomain in the config at {config_file_path.absolute()}')
+
         try:
             self.get_req('users?records_per_page=1&pagination=cursor')
         except requests.exceptions.ConnectionError:
@@ -365,7 +368,7 @@ class API:
         if not self.config_f_path.exists():
             self._config = {
                 'api_version': 3,
-                'subdomain': 'alliance',
+                'subdomain': '',
                 'prod_app_uid': '',
                 'stage_app_uid': ''
             }
